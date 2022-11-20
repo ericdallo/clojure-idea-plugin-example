@@ -1,0 +1,8 @@
+{:paths ["src/main" "src/clj-classes"]
+ :mvn/repos {"sonatype" {:url "https://oss.sonatype.org/content/repositories/releases/"}}
+ :deps {org.clojure/clojure {:mvn/version "1.11.1"}
+        com.intellij/openapi {:mvn/version "7.0.3"}}
+ :aliases {:build
+           {:deps {io.github.clojure/tools.build {:git/tag "v0.8.5" :git/sha "9c738da"}
+                   slipset/deps-deploy {:mvn/version "0.2.0"}}
+            :ns-default build}}}
